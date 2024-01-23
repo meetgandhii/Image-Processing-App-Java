@@ -1,0 +1,154 @@
+load res/input.png landscape-png
+load res/input.jpg landscape-jpg
+load res/input.ppm landscape-ppm
+save res/input.png landscape-png
+save res/input.jpg landscape-jpg
+save res/input.ppm landscape-ppm
+red-component landscape-png landscape-png-red-component
+green-component landscape-png landscape-png-green-component
+blue-component landscape-png landscape-png-blue-component
+value-component landscape-png landscape-png-value-component
+luma-component landscape-png landscape-png-luma-component
+intensity-component landscape-png landscape-png-intensity-component
+horizontal-flip landscape-png landscape-png-horizontal-flip
+vertical-flip landscape-png landscape-png-vertical-flip
+brighten 20 landscape-png landscape-png-brighten
+rgb-split landscape-png landscape-png-r-split landscape-png-g-split landscape-png-b-split
+rgb-combine landscape-png-rgb-combine landscape-png-r-split landscape-png-g-split landscape-png-b-split
+blur landscape-png landscape-png-blur
+sharpen landscape-png landscape-png-sharpen
+sepia landscape-png landscape-png-sepia
+red-component landscape-jpg landscape-jpg-red-component
+green-component landscape-jpg landscape-jpg-green-component
+blue-component landscape-jpg landscape-jpg-blue-component
+value-component landscape-jpg landscape-jpg-value-component
+luma-component landscape-jpg landscape-jpg-luma-component
+intensity-component landscape-jpg landscape-jpg-intensity-component
+horizontal-flip landscape-jpg landscape-jpg-horizontal-flip
+vertical-flip landscape-jpg landscape-jpg-vertical-flip
+brighten 20 landscape-jpg landscape-jpg-brighten
+rgb-split landscape-jpg landscape-jpg-r-split landscape-jpg-g-split landscape-jpg-b-split
+rgb-combine landscape-jpg-rgb-combine landscape-jpg-r-split landscape-jpg-g-split landscape-jpg-b-split
+blur landscape-jpg landscape-jpg-blur
+sharpen landscape-jpg landscape-jpg-sharpen
+sepia landscape-jpg landscape-jpg-sepia
+red-component landscape-ppm landscape-ppm-red-component
+green-component landscape-ppm landscape-ppm-green-component
+blue-component landscape-ppm landscape-ppm-blue-component
+value-component landscape-ppm landscape-ppm-value-component
+luma-component landscape-ppm landscape-ppm-luma-component
+intensity-component landscape-ppm landscape-ppm-intensity-component
+horizontal-flip landscape-ppm landscape-ppm-horizontal-flip
+vertical-flip landscape-ppm landscape-ppm-vertical-flip
+brighten 20 landscape-ppm landscape-ppm-brighten
+rgb-split landscape-ppm landscape-ppm-r-split landscape-ppm-g-split landscape-ppm-b-split
+rgb-combine landscape-ppm-rgb-combine landscape-ppm-r-split landscape-ppm-g-split landscape-ppm-b-split
+blur landscape-ppm landscape-ppm-blur
+sharpen landscape-ppm landscape-ppm-sharpen
+sepia landscape-ppm landscape-ppm-sepia
+compress 70 input compression70
+compress 90 input compression90
+compress 100 input compression100
+histogram input hist
+color-correct input colorCorrect1
+levels-adjust 10 100 200 input levels-adjust1
+levels-adjust 20 100 255 input levels-adjust2
+histogram compression70 hist1
+histogram compression90 hist2
+histogram compression100 hist3
+histogram colorCorrect1 hist4
+histogram levels-adjust1 hist5
+histogram levels-adjust1 hist6
+blur input blur-split-1 split 33
+blur input blur-split-2 split 66
+sharpen input sharpen-split-1 split 33
+sharpen input sharpen-split-2 split 66
+sepia input sepia-split-1 split 33
+sepia input sepia-split-2 split 66
+value-component input value-component-split-1 split 33
+value-component input value-component-split-2 split 66
+intensity-component input intensity-component-split-1 split 33
+intensity-component input intensity-component-split-2 split 66
+luma-component input luma-component-split-1 split 33
+luma-component input luma-component-split-2 split 66
+color-correct input color-correct-split-1 split 33
+color-correct input color-correct-split-2 split 66
+levels-adjust 11 111 222 input levels-adjust-split-1 split 33
+levels-adjust 111 211 250 input levels-adjust-split-2 split 66
+save res/a5/compression70.jpg compression70
+save res/a5/compression90.jpg compression90
+save res/a5/compression100.jpg compression100
+save res/a5/histogram.jpg hist
+save res/a5/histogram-compress70.jpg hist1
+save res/a5/histogram-compress90.jpg hist2
+save res/a5/histogram-compress100.jpg hist3
+save res/a5/histogram-colorCorrect.jpg hist4
+save res/a5/histogram-levels-1.jpg hist5
+save res/a5/histogram-levels-2.jpg hist6
+save res/a5/colorCorrect1.jpg colorCorrect1
+save res/a5/levels-adjust1.jpg levels-adjust1
+save res/a5/levels-adjust2.jpg levels-adjust2
+save res/a5/blur-split-1.jpg blur-split-1
+save res/a5/blur-split-2.jpg blur-split-2
+save res/a5/sharpen-split-1.jpg sharpen-split-1
+save res/a5/sharpen-split-2.jpg sharpen-split-2
+save res/a5/sepia-split-1.jpg sepia-split-1
+save res/a5/sepia-split-2.jpg sepia-split-2
+save res/a5/value-component-split-1.jpg value-component-split-1
+save res/a5/value-component-split-2.jpg value-component-split-2
+save res/a5/intensity-component-split-1.jpg intensity-component-split-1
+save res/a5/intensity-component-split-2.jpg intensity-component-split-2
+save res/a5/luma-component-split-1.jpg luma-component-split-1
+save res/a5/luma-component-split-2.jpg luma-component-split-2
+save res/a5/color-correct-split-1.jpg color-correct-split-1
+save res/a5/color-correct-split-2.jpg color-correct-split-2
+save res/a5/levels-adjust-split-1.jpg levels-adjust-split-1
+save res/a5/levels-adjust-split-2.jpg levels-adjust-split-2
+save res/landscape-png-red-component.png landscape-png-red-component
+save res/landscape-png-green-component.png landscape-png-green-component
+save res/landscape-png-blue-component.png landscape-png-blue-component
+save res/landscape-png-value-component.png landscape-png-value-component
+save res/landscape-png-luma-component.png landscape-png-luma-component
+save res/landscape-png-intensity-component.png landscape-png-intensity-component
+save res/landscape-png-horizontal-flip.png landscape-png-horizontal-flip
+save res/landscape-png-vertical-flip.png landscape-png-vertical-flip
+save res/landscape-png-r-split.png landscape-png-r-split
+save res/landscape-png-g-split.png landscape-png-g-split
+save res/landscape-png-b-split.png landscape-png-b-split
+save res/landscape-png-rgb-combine.png landscape-png-rgb-combine
+save res/landscape-png-brighten.png landscape-png-brighten
+save res/landscape-png-blur.png landscape-png-blur
+save res/landscape-png-sharpen.png landscape-png-sharpen
+save res/landscape-png-sepia.png landscape-png-sepia
+save res/landscape-jpg-red-component.jpg landscape-jpg-red-component
+save res/landscape-jpg-green-component.jpg landscape-jpg-green-component
+save res/landscape-jpg-blue-component.jpg landscape-jpg-blue-component
+save res/landscape-jpg-value-component.jpg landscape-jpg-value-component
+save res/landscape-jpg-luma-component.jpg landscape-jpg-luma-component
+save res/landscape-jpg-intensity-component.jpg landscape-jpg-intensity-component
+save res/landscape-jpg-horizontal-flip.jpg landscape-jpg-horizontal-flip
+save res/landscape-jpg-vertical-flip.jpg landscape-jpg-vertical-flip
+save res/landscape-jpg-r-split.jpg landscape-jpg-r-split
+save res/landscape-jpg-g-split.jpg landscape-jpg-g-split
+save res/landscape-jpg-b-split.jpg landscape-jpg-b-split
+save res/landscape-jpg-rgb-combine.jpg landscape-jpg-rgb-combine
+save res/landscape-jpg-brighten.jpg landscape-jpg-brighten
+save res/landscape-jpg-blur.jpg landscape-jpg-blur
+save res/landscape-jpg-sharpen.jpg landscape-jpg-sharpen
+save res/landscape-jpg-sepia.jpg landscape-jpg-sepia
+save res/landscape-ppm-red-component.ppm landscape-ppm-red-component
+save res/landscape-ppm-green-component.ppm landscape-ppm-green-component
+save res/landscape-ppm-blue-component.ppm landscape-ppm-blue-component
+save res/landscape-ppm-value-component.ppm landscape-ppm-value-component
+save res/landscape-ppm-luma-component.ppm landscape-ppm-luma-component
+save res/landscape-ppm-intensity-component.ppm landscape-ppm-intensity-component
+save res/landscape-ppm-horizontal-flip.ppm landscape-ppm-horizontal-flip
+save res/landscape-ppm-vertical-flip.ppm landscape-ppm-vertical-flip
+save res/landscape-ppm-r-split.ppm landscape-ppm-r-split
+save res/landscape-ppm-g-split.ppm landscape-ppm-g-split
+save res/landscape-ppm-b-split.ppm landscape-ppm-b-split
+save res/landscape-ppm-rgb-combine.ppm landscape-ppm-rgb-combine
+save res/landscape-ppm-brighten.ppm landscape-ppm-brighten
+save res/landscape-ppm-blur.ppm landscape-ppm-blur
+save res/landscape-ppm-sharpen.ppm landscape-ppm-sharpen
+save res/landscape-ppm-sepia.ppm landscape-ppm-sepia

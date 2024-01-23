@@ -1,0 +1,258 @@
+Command Line Interface:
+
+The following are the commands in the program
+    load image-path image-name: Load an image from the specified path and refer it to henceforth
+    in the program by the given image name.
+    save image-path image-name: Save the image with the given name to the specified path which
+    should include the name of the file.
+    red-component image-name dest-image-name: Create an image with the red-component of the
+    image with the given name, and refer to it henceforth in the program by the given destination
+    name.
+    green-component image-name dest-image-name: Create an image with the green-component of
+    the image with the given name, and refer to it henceforth in the program by the given
+    destination name.
+    blue-component image-name dest-image-name: Create an image with the blue-component of the
+    image with the given name, and refer to it henceforth in the program by the given
+    destination name.
+    value-component image-name dest-image-name: Create an image with the value-component of the
+    image with the given name, and refer to it henceforth in the program by the given
+    destination name.
+    luma-component image-name dest-image-name: Create an image with the luma-component of the
+    image with the given name, and refer to it henceforth in the program by the given
+    destination name.
+    intensity-component image-name dest-image-name: Create an image with the intensity-component
+    of the image with the given name, and refer to it henceforth in the program by the
+    given destination name.
+    horizontal-flip image-name dest-image-name: Flip an image horizontally to create a new image,
+    referred to henceforth by the given destination name.
+    vertical-flip image-name dest-image-name: Flip an image vertically to create a new image,
+    referred to henceforth by the given destination name.
+    brighten increment image-name dest-image-name: brighten the image by the given increment to
+    create a new image, referred to henceforth by the given destination name. The increment may
+    be positive (brightening or negative (darkening.
+    rgb-split image-name dest-image-name-red dest-image-name-green dest-image-name-blue: split the
+    given image into three images containing its red, green and blue components respectively.
+    rgb-combine image-name red-image green-image blue-image: Combine the three images that are
+    individually red, green and blue into a single image that gets its red, green and blue
+    components from the three images respectively.
+    blur image-name dest-image-name: blur the given image and store the result in another image
+    with the given name.
+    sharpen image-name dest-image-name: sharpen the given image and store the result in another
+    image with the given name.
+    sepia image-name dest-image-name: produce a sepia-toned version of the given image and store
+    the result in another image with the given name.
+    run script-file: Load and run the script commands in the specified file.
+    histogram image-name dest-image-name: Support the ability to produce an image that represent
+    the histogram of a given image.
+    compress percentage image-name dest-image-name: Supports the ability to compress an image by
+    the given percentage.
+    color-correct image-name dest-image-name: Supports the ability to color-correct an image by
+    aligning the meaningful peaks of its histogram.
+    levels-adjust b m w image-name dest-image-name: Support the ability to adjust the levels of an
+    image by the given parameters.
+    Optional parameter split: blur image-name dest-image split p: Support the ability to specify
+    a vertical line to generate a split view of operations based on int parameter percentage p,
+    on functions blur, sharpen, sepia, greyscale, color correction and levels adjustment
+    levels-adjust b m w image-name dest-image-name split p: Support the ability to specify a
+    vertical line to generate a split view of level-adjustment based on int parameter percentage p,
+    color-correct image-name dest-image-name split p: Support the ability to specify a vertical
+    line to generate a split view of color correction based on int parameter percentage p,
+    value-component percentage image-name dest-image-name split p: Support the ability to specify a
+    vertical line to generate a split view of value-component based on int parameter percentage p,
+    intensity-component percentage image-name dest-image-name split p: Support the ability to
+    specify a vertical line to generate a split view of intensity-component based on int parameter
+    percentage p,
+    luma-component percentage image-name dest-image-name split p: Support the ability
+    to specify a vertical line to generate a split view of luma-component based on int
+    parameter percentage p,
+    sharpen image-name dest-image-name split p: Support the ability to
+    specify a vertical line to generate a split view of sharpened image based on int parameter
+    percentage p,
+    sepia image-name dest-image-name split p: Support the ability to specify a
+    vertical line to generate a split view of sepia image based on int parameter percentage p,
+    -file name-of-script.txt: the ability to accept a script file as a command-line option
+
+load should always be typed in first in order to set up the image to perform operations,
+and after operation completion the save command can be used to save the folder to a directory.
+
+the order of words in commands cannot and must not change
+example: the format for load is load image-path image-name. However doing load image-name image-path
+will cause errors.
+
+Graphical User Interface:
+
+    The GUI is a simple interface that allows the user to select an image from their computer and
+    perform operations on it.
+
+    How to Use
+
+    Loading an Image:
+
+    You can load an image by clicking the "Load an Image" button and selecting an image file from
+    your computer.
+    The image will be displayed in the main image panel.
+
+
+    Button Actions and Image Operations:
+
+    The GUI includes various buttons for image operations.
+    Clicking a button triggers the corresponding action, handled by the GUIController.
+    For example, clicking the "Red Component" button will display the red component of the image.
+    There are several buttons for image operations, including "Red Component", "Green Component",
+    "Blue Component", "Value Component", "Luma Component", "Intensity Component", "Horizontal Flip",
+    "Vertical Flip", "Blur", "Sharpen", and "Sepia", "Compression", "Levels-Adjust", and
+    "Color correction".
+    Each of these buttons triggers the corresponding image operation, handled by the GUIController.
+    Below are the steps for each operation:
+
+    Load Image:
+    Click the "load an image" button and select an image file from your computer.
+    Choose the location and name of any image on your computer.
+    Click on "Open" to load the image.
+
+    Red Component:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Red Component" button to display the red component of the image.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Green Component:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Green Component" button to display the green component of the image.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Blue Component:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Blue Component" button to display the blue component of the image.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Value Component:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Value Component" button to display the value component of the image.
+    Click on Yes if you want a split preview of the operation, or No if you don't.
+    After clicking Yes, choose the percentage of split you want.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Intensity Component:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Intensity Component" button to display the intensity component of the image.
+    Click on Yes if you want a split preview of the operation, or No if you don't.
+    After clicking Yes, choose the percentage of split you want.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Luma Component:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Luma Component" button to display the luma component of the image.
+    Click on Yes if you want a split preview of the operation, or No if you don't.
+    After clicking Yes, choose the percentage of split you want.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Sepia:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Sepia" button to display the sepia of the image.
+    Click on Yes if you want a split preview of the operation, or No if you don't.
+    After clicking Yes, choose the percentage of split you want.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Blur:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Blur" button to display the blur of the image.
+    Click on Yes if you want a split preview of the operation, or No if you don't.
+    After clicking Yes, choose the percentage of split you want.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Sharpen:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Sharpen" button to display the sharpened output of the image.
+    Click on Yes if you want a split preview of the operation, or No if you don't.
+    After clicking Yes, choose the percentage of split you want.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Flip Horizontally:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Flip Horizontally" button to display the horizontally flipped image.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Flip Vertically:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Flip Vertically" button to display the vertically flipped image.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Compression:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "Compression" button to display the compressed image.
+    Enter the compression parameter in the popup dialog based on the percentage of compression.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Color Correction:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "color-correct" button to display the color corrected image.
+    Click on Yes if you want a split preview of the operation, or No if you don't.
+    After clicking Yes, scroll to the percentage of split you want.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Levels Adjustment:
+    Click the "load an image" button and select an image file from your computer.
+    Click the "levels-adjust" button to display the levels adjusted image.
+    Enter the B, M, and W parameters in the popup dialog in ascending order.
+    Click on Yes if you want a split preview of the operation, or No if you don't.
+    After clicking Yes, scroll to the percentage of split you want.
+    Click the "Save the Image" button to save the image to your computer.
+
+    Save Histogram:
+    Click the "load an image" button and select an image file from your computer.
+    Perform any operation on the image.
+    Click the "Save Histogram" button to save the histogram of the image.
+    Choose the file type for the saved image.
+    Choose the location and name for saving.
+
+    Save Image:
+    Click the "load an image" button and select an image file from your computer.
+    Perform any operation on the image.
+    Click the "Save the Image" button to save the image.
+    Choose the file type for the saved image.
+    Choose the location and name for saving.
+
+
+    Input Handling:
+
+    The class handles user inputs for compression and levels adjustment through popup dialogs.
+
+    For compression, click the "Compress" button and enter the compression parameter.
+    This parameter is supposed to be an integer between 0 and 100.
+
+    For levels adjustment, click the "Levels Adjust" button and enter the parameters B, M, and W.
+    These parameters are supposed to be integers, and in ascending order in a range of 0 to 255.
+
+
+    Image Display:
+
+    Images are displayed in a split-panel layout.
+    The main image, previous image, and histogram are displayed in separate panels.
+    The loaded image is displayed in the top-left panel.
+    The previous image is displayed in the bottom-left panel.
+    The histogram is displayed in the top-right panel.
+    The current image is displayed in the bottom-right panel.
+
+
+    Split View:
+
+    The GUI supports split view for certain operations.
+    The split view is displayed as a popup window. You are able to adjust the split view by
+    dragging the line and choosing the value or percentage of split required.
+    Split operation is supported for the following operations:
+    "Blur", "Sharpen", "Sepia", "Color correction", "Levels adjustment", "Value Component", and
+    "Compress".
+
+
+    Saving Images:
+
+    Clicking the "Save Histogram" or "Save the Image" buttons prompts the user to choose a
+    file type and location for saving.
+
+
+    Error Handling:
+
+    Errors are displayed using standard Swing JOptionPane dialogs mentioning what mistake was
+    made by the user. It also provides a brief description of the error and how to fix it.
+    It even gives a warning to the user if the image is not saved before performing a load
+    operation again.

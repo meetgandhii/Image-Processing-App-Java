@@ -1,0 +1,60 @@
+load ../res/input.jpg input
+compress 70 input compression70
+compress 90 input compression90
+compress 100 input compression100
+histogram input hist
+color-correct input colorCorrect1
+levels-adjust 10 100 200 input levels-adjust1
+levels-adjust 20 100 255 input levels-adjust2
+histogram compression70 hist1
+histogram compression90 hist2
+histogram compression100 hist3
+histogram colorCorrect1 hist4
+histogram levels-adjust1 hist5
+histogram levels-adjust1 hist6
+blur input blur-split-1 split 33
+blur input blur-split-2 split 66
+sharpen input sharpen-split-1 split 33
+sharpen input sharpen-split-2 split 66
+sepia input sepia-split-1 split 33
+sepia input sepia-split-2 split 66
+value-component input value-component-split-1 split 33
+value-component input value-component-split-2 split 66
+intensity-component input intensity-component-split-1 split 33
+intensity-component input intensity-component-split-2 split 66
+luma-component input luma-component-split-1 split 33
+luma-component input luma-component-split-2 split 66
+color-correct input color-correct-split-1 split 33
+color-correct input color-correct-split-2 split 66
+levels-adjust 11 111 222 input levels-adjust-split-1 split 33
+levels-adjust 111 211 250 input levels-adjust-split-2 split 66
+save res/a5/compression70.jpg compression70
+save res/a5/compression90.jpg compression90
+save res/a5/compression100.jpg compression100
+save res/a5/histogram.jpg hist
+save res/a5/histogram-compress70.jpg hist1
+save res/a5/histogram-compress90.jpg hist2
+save res/a5/histogram-compress100.jpg hist3
+save res/a5/histogram-colorCorrect.jpg hist4
+save res/a5/histogram-levels-1.jpg hist5
+save res/a5/histogram-levels-2.jpg hist6
+save res/a5/colorCorrect1.jpg colorCorrect1
+save res/a5/levels-adjust1.jpg levels-adjust1
+save res/a5/levels-adjust2.jpg levels-adjust2
+save res/a5/blur-split-1.jpg blur-split-1
+save res/a5/blur-split-2.jpg blur-split-2
+save res/a5/sharpen-split-1.jpg sharpen-split-1
+save res/a5/sharpen-split-2.jpg sharpen-split-2
+save res/a5/sepia-split-1.jpg sepia-split-1
+save res/a5/sepia-split-2.jpg sepia-split-2
+save res/a5/value-component-split-1.jpg value-component-split-1
+save res/a5/value-component-split-2.jpg value-component-split-2
+save res/a5/intensity-component-split-1.jpg intensity-component-split-1
+save res/a5/intensity-component-split-2.jpg intensity-component-split-2
+save res/a5/luma-component-split-1.jpg luma-component-split-1
+save res/a5/luma-component-split-2.jpg luma-component-split-2
+save res/a5/color-correct-split-1.jpg color-correct-split-1
+save res/a5/color-correct-split-2.jpg color-correct-split-2
+save res/a5/levels-adjust-split-1.jpg levels-adjust-split-1
+save res/a5/levels-adjust-split-2.jpg levels-adjust-split-2
+quit

@@ -1,0 +1,4 @@
+load input/input.jpg landscape-jpg
+red-component landscape-jpg landscape-jpg-red-component
+save testFile/ajeeb.jpg landscape-jpg-red-component
+quit

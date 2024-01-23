@@ -1,0 +1,33 @@
+load res/input.jpg landscape-jpg
+red-component landscape-jpg landscape-jpg-red-component
+green-component landscape-jpg landscape-jpg-green-component
+blue-component landscape-jpg landscape-jpg-blue-component
+value-component landscape-jpg landscape-jpg-value-component
+luma-component landscape-jpg landscape-jpg-luma-component
+intensity-component landscape-jpg landscape-jpg-intensity-component
+horizontal-flip landscape-jpg landscape-jpg-horizontal-flip
+vertical-flip landscape-jpg landscape-jpg-vertical-flip
+brighten 20 landscape-jpg landscape-jpg-brighten
+brighten -20 landscape-jpg landscape-jpg-darken
+rgb-split landscape-jpg landscape-jpg-r-split landscape-jpg-g-split landscape-jpg-b-split
+rgb-combine landscape-jpg-rgb-combine landscape-jpg-r-split landscape-jpg-g-split landscape-jpg-b-split
+blur landscape-jpg landscape-jpg-blur
+sharpen landscape-jpg landscape-jpg-sharpen
+sepia landscape-jpg landscape-jpg-sepia
+save res/a4/landscape-jpg-red-component.jpg landscape-jpg-red-component
+save res/a4/landscape-jpg-green-component.jpg landscape-jpg-green-component
+save res/a4/landscape-jpg-blue-component.jpg landscape-jpg-blue-component
+save res/a4/landscape-jpg-value-component.jpg landscape-jpg-value-component
+save res/a4/landscape-jpg-luma-component.jpg landscape-jpg-luma-component
+save res/a4/landscape-jpg-intensity-component.jpg landscape-jpg-intensity-component
+save res/a4/landscape-jpg-horizontal-flip.jpg landscape-jpg-horizontal-flip
+save res/a4/landscape-jpg-vertical-flip.jpg landscape-jpg-vertical-flip
+save res/a4/landscape-jpg-r-split.jpg landscape-jpg-r-split
+save res/a4/landscape-jpg-g-split.jpg landscape-jpg-g-split
+save res/a4/landscape-jpg-b-split.jpg landscape-jpg-b-split
+save res/a4/landscape-jpg-rgb-combine.jpg landscape-jpg-rgb-combine
+save res/a4/landscape-jpg-brighten.jpg landscape-jpg-brighten
+save res/a4/landscape-jpg-darken.jpg landscape-jpg-darken
+save res/a4/landscape-jpg-blur.jpg landscape-jpg-blur
+save res/a4/landscape-jpg-sharpen.jpg landscape-jpg-sharpen
+save res/a4/landscape-jpg-sepia.jpg landscape-jpg-sepia
